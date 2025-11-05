@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   root 'chatroom#index'
   get 'login', to: 'session#new'
+  # RESTful routes for users (used by controller tests and user management)
+  resources :users
 end
