@@ -3,12 +3,12 @@
 
 <div id="chatroom">
     <div id="chatroom-messages" style="position:relative">
-        <p> Sample message 1</p>
-        <p> Sample message 2</p>
-        <p> Sample message 3</p>
-        <div id="chat-form" style="position:absolute;bottom:0;width:100%;background-color:white;">
+        <% @messages.each do |message| %>
+            <p><strong><%= message.user.username %>:</strong> <%= message.body %></p>
+        <% end %>
+        <div id="chat-form" style="position:absolute;bottom:0;width:98%;background-color:white;padding: 6px;">
             <form >
-                <input type="text" id="message-input" placeholder="Type your message here..." style="width:90%" />
+                <input type="text" id="message-input" placeholder="Type your message here..." style="width:89%" />
                 <button type="submit" id="send-button">Send</button>
             </form>
         </div>
