@@ -3,9 +3,7 @@
 
 <div id="chatroom">
     <div id="chatroom-messages" style="position:relative">
-        <% @messages.each do |message| %>
-            <p><strong><%= message.user.username %>:</strong> <%= message.body %></p>
-        <% end %>
+       <%= render @messages %>
         <div id="chat-form" style="position:absolute;bottom:0;width:98%;background-color:white;padding: 6px;">
             <form >
                 <input type="text" id="message-input" placeholder="Type your message here..." style="width:89%" />
