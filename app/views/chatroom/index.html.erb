@@ -1,1 +1,21 @@
-<h1>This is the chatroom route</h1>
+<h1>Say something</h1>
+<%= image_tag "chatting.png", alt: "Message icon", style: "justify-content:center;width:200px;display:block;margin-left:auto;margin-right:auto" %>
+
+<div id="chatroom">
+    <div id="chatroom-messages" style="position:relative">
+        <p> Sample message 1</p>
+        <p> Sample message 2</p>
+        <p> Sample message 3</p>
+        <div id="chat-form" style="position:absolute;bottom:0;width:100%;background-color:white;">
+            <form >
+                <input type="text" id="message-input" placeholder="Type your message here..." style="width:90%" />
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="participants">
+        <p> Participant 1</p>
+        <p> Participant 2</p>
+        <p> Participant 3</p>
+    </div>
+</div>

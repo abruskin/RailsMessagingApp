@@ -81,7 +81,96 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
-     
-        
+}
+#chatroom{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 20px;
     
+}
+#chatroom-messages {
+    border: 1px solid black;
+    height: 400px;
+    width: 600px;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px;
+    p {
+        padding: 5px;
+        margin: 0px;
+    }
+}
+#participants {
+    border: 1px solid black;
+    height: 400px;
+    width: 200px;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px;
+    p {
+        padding: 5px;
+        margin: 0px;
+    }
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+#session-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+#login {
+    border: 1px solid black;
+    width: 400px;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px;
+    background-color: ghostwhite;
+    padding: 10px;
+    text-align: center;
+}
+
+#signup {
+    border: 1px solid black;
+    width: 400px;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px;
+    background-color: ghostwhite;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: orange !important;
+    color:whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid whitesmoke !important;
+    height: 40px;
+    width: 200px !important;
+    margin: 0 auto;
+    box-shadow: none !important;
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.button :hover {
+    background-color: darkorange; 
+}
+
+form #loginform{
+    width: 30%;
+    margin: 0 auto;
+    border: none !important;
+    box-shadow: none !important;
 }
