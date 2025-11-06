@@ -174,3 +174,11 @@ form #loginform{
     border: none !important;
     box-shadow: none !important;
 }
+
+.success{
+    background-color: darkseagreen;
+}
+
+.error{
+    background-color: lightcoral;
+}

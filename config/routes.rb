@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root 'chatroom#index'
-  get 'login', to: 'session#new'
+  get 'login', to: 'sessions#new'
   # RESTful routes for users (used by controller tests and user management)
-  resources :users
+  # resources :users
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
 end

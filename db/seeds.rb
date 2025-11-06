@@ -19,4 +19,4 @@ Message.create(body: 'How is everyone doing today?', user: User.find_by(username
 Message.create(body: 'Just finished a great book!', user: User.find_by(username: 'Carol'))
 Message.create(body: 'Anyone up for a game later?', user: User.find_by(username: 'Daniel'))
 Message.create(body: 'Loving the new cafe downtown.', user: User.find_by(username: 'Eugenia'))
-Message.create(body: 'Can’t wait for the weekend!', user: User.find_by(username: 'Fred'))
+Message.create(body: "Can’t wait for the weekend!", user: User.find_by(username: 'Fred'))

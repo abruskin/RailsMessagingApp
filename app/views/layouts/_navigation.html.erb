@@ -2,13 +2,17 @@
     <ul id="listnavlinks">
         <li><%= link_to "Chatroom", root_path %></li>
         <li><a href="#">Messages</a></li>
-        <li style="float:right"> <a href="about.asp">Sign Up</a></li> 
+        <% if !logged_in? %>
+            <li style="float:right"> <a href="about.asp">Sign Up</a></li> 
+        <% end %>
         <li class="dropdown" style="float:right">
         <a href="javascript:void(0)" class="dropbtn" >Account</a>
             <div class="dropdown-content">
-                <a href="#">Log out</a>
-                <%= link_to "Log in", login_path %>
-                <a href="#">Sign up</a>
+                <% if logged_in? %>
+                    <%= link_to "Log out", logout_path,data: { turbo_method: :delete } %>
+                <% else %>
+                    <%= link_to "Log in", login_path %>
+                <% end %>
             </div>
     </li>
     </ul>
