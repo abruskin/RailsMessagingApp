@@ -182,3 +182,22 @@ form #loginform{
 .error{
     background-color: lightcoral;
 }
+
+.flash-msg {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    background-color: lemonchiffon;
+}
+
+.notice{
+    background-color: lightgreen;
+}
+
+.error{
+    background-color: lightcoral;
+}
+
+

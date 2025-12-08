@@ -1,9 +1,20 @@
 <div class="container">
 <% flash.each do |name, msg| %>
-
-    <div class="alert" role="alert">
-    <%= msg %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <% if name == "notice" %>
+        
+    <div class="flash-msg notice" >
+       <span>
+    <%= msg %></span> 
+    <% elsif name == "alert" %>
+    <div class="flash-msg alert">
+       <span>
+    <%= msg %></span> 
+    <% elsif name == "error" %>
+    <div class="flash-msg error" >
+       <span>
+    <%= msg %></span>
+    
 </div>
+<%end %>
 <% end %>
 </div>
